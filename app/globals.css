@@ -1,0 +1,383 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=GFS+Didot&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100;0,8..144,200;0,8..144,300;0,8..144,400;0,8..144,500;0,8..144,600;0,8..144,700;0,8..144,800;0,8..144,900;1,8..144,100;1,8..144,200;1,8..144,300;1,8..144,400;1,8..144,500;1,8..144,600;1,8..144,700;1,8..144,800;1,8..144,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root[theme="light"]  {
+  --background: rgb(186, 186, 186);
+  --text-color: rgb(32, 31, 31);
+
+  --theme: #fff;
+
+
+  --color-bw: #000000;
+
+  --theme-icon: url('../public/light_mode.svg');
+
+  --shadow-primary: 0px 4px 12px 0px rgba(0, 0, 0, 0.08);
+
+
+  --Background: #f2f2f2;
+--Primary-Text: #333333;
+--Secondary-Text: #666666;
+--Robin-Blue: #979baf ;/*(Robin Blue)*/
+--Robin-Orange: #FF6823 ;/*(Robin Orange)*/
+--Robin-Red: #d7610d ;/*(Robin red)*/
+--Robin-Gray: #596284 ;/*(Robin Gray)*/
+--Robin-Light-Blue: #8da2d5 ;/*(Robin Light Blue)*/
+--Robin-Purple: #a89cb4 ;/*(Robin Purple)*/
+--Robin-Border: #ebebeb ;/*(Robin Border)*/
+
+--Robin-icon: url('../public/Robin.svg');
+
+--home: url('../public/home.svg');
+--trending: url('../public/tranding.svg');
+--post: url('../public/post.svg');
+--chat: url('../public/chat.svg');
+--create: url('../public/create.svg');
+--notification: url('../public/notifications.svg');
+--setting: url('../public/gear.svg');
+--help: url('../public/support.svg');
+
+--home-orange: url('../public/home-orange.svg');
+--trending-orange: url('../public/tranding-orange.svg');
+--post-orange: url('../public/post-orange.svg');
+--chat-orange: url('../public/chat-orange.svg');
+--create-orange: url('../public/create-orange.svg');
+--notification-orange: url('../public/notifications-orange.svg');
+--setting-orange: url('../public/gear-orange.svg');
+--help-orange: url('../public/support-orange.svg');
+
+--home-bw: url('../public/home-black.svg');
+--trending-bw: url('../public/tranding-black.svg');
+--post-bw: url('../public/post-black.svg');
+--chat-bw: url('../public/chat-black.svg');
+--create-bw: url('../public/create-black.svg');
+--notification-bw: url('../public/notifications-black.svg');
+--setting-bw: url('../public/gear-black.svg');
+--help-bw: url('../public/support-black.svg');
+
+--leaderboard: url('../public/leaderboard.svg');
+--leaderboard-orange: url('../public/leaderboard-orange.svg');
+
+--body: rgb(247, 247, 247);
+
+--upvote: url('../public/upvote.svg');
+--upvote-orange: url('../public/upvote-orange.svg');
+--downvote: url('../public/downvote.svg');
+--downvote-orange: url('../public/downvote-orange.svg');
+
+--comment-icon: url('../public/comment.svg');
+--more: url('../public/more.svg');
+
+--bookmark: url('../public/bookmark.svg');
+--bookmarked: url('../public/bookmark-fill.svg');
+--reply: url('../public/reply.svg');
+}
+
+:root[theme="dark"]  {
+  --background: rgb(27, 20, 20);
+  --text-color: rgb(163, 158, 158);
+
+  --theme: #0b0c11;
+
+  --color-bw: #ffffff;
+  --theme-icon: url('../public/dark_mode.svg');
+
+  --shadow-primary: 0px 4px 12px 0px rgba(0, 0, 0, 0.08);
+
+  --Background: #1a1a1a;
+  --Primary-Text: #ffffff;
+  --Secondary-Text: #cccccc;
+  --Robin-Blue: #979baf ;/*(Robin Blue)*/
+  --Robin-Orange: #FF8023 ;/*(Robin Orange)*/
+  --Robin-Red: #ff3223 ;/*(Robin red)*/
+  --Robin-Gray: #596284 ;/*(Robin Gray)*/
+  --Robin-Light-Blue: #8da2d5 ;/*(Robin Light Blue)*/
+  --Robin-Purple: #a89cb4 ;/*(Robin Purple)*/
+  --Robin-Border: rgb(30, 30, 47) ;/*(Robin Border)*/
+
+  --Robin-icon: url('../public/Robin-darkMode.svg');
+
+  --home: url('../public/home.svg');
+--trending: url('../public/tranding.svg');
+--post: url('../public/post.svg');
+--chat: url('../public/chat.svg');
+--create: url('../public/create.svg');
+--notification: url('../public/notifications.svg');
+--setting: url('../public/gear.svg');
+--help: url('../public/support.svg');
+
+--home-orange: url('../public/home-orange-darkMode.svg');
+--trending-orange: url('../public/tranding-orange-darkMode.svg');
+--post-orange: url('../public/post-orange-darkMode.svg');
+--chat-orange: url('../public/chat-orange-darkMode.svg');
+--create-orange: url('../public/create-orange-darkMode.svg');
+--notification-orange: url('../public/notifications-orange-darkMode.svg');
+--setting-orange: url('../public/gear-orange-darkMode.svg');
+--help-orange: url('../public/support-orange-darkMode.svg');
+
+--home-bw: url('../public/home.svg');
+--trending-bw: url('../public/tranding.svg');
+--post-bw: url('../public/post.svg');
+--chat-bw: url('../public/chat.svg');
+--create-bw: url('../public/create.svg');
+--notification-bw: url('../public/notifications.svg');
+--setting-bw: url('../public/gear.svg');
+--help-bw: url('../public/support.svg');
+
+--leaderboard: url('../public/leaderboard-darkMode.svg');
+--leaderboard-orange: url('../public/leaderboard-orange-darkMode.svg');
+
+--body: rgb(14, 20, 24);
+
+--upvote: url('../public/upvote-darkMode.svg');
+--upvote-orange: url('../public/upvote-orange-darkMode.svg');
+--downvote: url('../public/downvote-darkMode.svg');
+--downvote-orange: url('../public/downvote-orange-darkMode.svg');
+
+--comment-icon: url('../public/comment-darkMode.svg');
+--more: url('../public/more-darkMode.svg');
+--bookmark: url('../public/bookmark-dark.svg');
+--bookmarked: url('../public/bookmark-fill-darkMode.svg');
+--reply: url('../public/reply\ -darkMode.svg');
+
+}
+.more-icon{background-image: var(--more);}
+.comment-icon{background-image: var(--comment-icon);}
+.reply-icon{background-image: var(--reply);}
+
+.bookmark{background-image: var(--bookmark);}
+.bookmarked{background-image: var(--bookmarked);}
+
+.upvote{background-image: var(--upvote);}
+.upvote-orange{background-image: var(--upvote-orange);}
+.downvote{background-image: var(--downvote);}
+.downvote-orange{background-image: var(--downvote-orange);}
+
+.home{background-image: var(--home);}
+.trending{background-image: var(--trending);}
+.post{background-image: var(--post);}
+.chat{background-image: var(--chat);}
+.create{background-image: var(--create);}
+.notifications{background-image: var(--notification);}
+.setting{background-image: var(--setting);}
+.help{background-image: var(--help);}
+.leaderboard{background-image: var(--leaderboard);}
+
+.home-bw{background-image: var(--home-bw);}
+.trending-bw{background-image: var(--trending-bw);}
+.post-bw{background-image: var(--post-bw);}
+.chat-bw{background-image: var(--chat-bw);}
+.create-bw{background-image: var(--create-bw);}
+.notifications-bw{background-image: var(--notification-bw);}
+.setting-bw{background-image: var(--setting-bw);}
+.help-bw{background-image: var(--help-bw);}
+
+.home-orange{background-image: var(--home-orange);}
+.trending-orange{background-image: var(--trending-orange);}
+.post-orange{background-image: var(--post-orange);}
+.chat-orange{background-image: var(--chat-orange);}
+.create-orange{background-image: var(--create-orange);}
+.notifications-orange{background-image: var(--notification-orange);}
+.setting-orange{background-image: var(--setting-orange);}
+.help-orange{background-image: var(--help-orange);}
+.leaderboard-orange{background-image: var(--leaderboard-orange);}
+
+
+.color-bw{color: var(--color-bw);}
+
+.Robin-icon{
+  background-image: var(--Robin-icon);
+}
+.Robin-theme-bg{background: var(--theme);}
+
+.Robin-bw{color: var(--Background);}
+.Robin-primary{color: var(--Primary-Text);}
+.Robin-secondary{color: var(--Secondary-Text);}
+.Robin-blue{color: var(--Robin-Blue);}
+.Robin-orange{color: var(--Robin-Orange);}
+.Robin-red{color: var(--Robin-Red);}
+.Robin-gray{color: var(--Robin-Gray);}
+.Robin-light-blue{color: var(--Robin-Light-Blue);}
+.Robin-purple{color: var(--Robin-Purple);}
+
+.bg-Robin-bw{background: var(--Background);}
+.bg-Robin-primary{background: var(--Primary-Text);}
+.bg-Robin-secondary{background: var(--Secondary-Text);}
+.bg-Robin-blue{background: var(--Robin-Blue);}
+.bg-Robin-orange{background: var(--Robin-Orange);}
+.bg-Robin-gray{background: var(--Robin-Gray);}
+.bg-Robin-light-blue{background: var(--Robin-Light-Blue);}
+.bg-Robin-purple{background: var(--Robin-Purple);}
+
+.border-Robin-bw{border-color: var(--Background);}
+.border-Robin-primary{border-color: var(--Primary-Text);}
+.border-Robin-secondary{border-color: var(--Secondary-Text);}
+.border-Robin-blue{border-color: var(--Robin-Blue);}
+.border-Robin-orange{border-color: var(--Robin-Orange);}
+.border-Robin-gray{border-color: var(--Robin-Gray);}
+.border-Robin-light-blue{border-color: var(--Robin-Light-Blue);}
+.border-Robin-purple{border-color: var(--Robin-Purple);}
+.Robin-border{border-color: var(--Robin-Border);}
+
+
+.shadow-primary {
+  box-shadow: var(--shadow-primary);
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: var(--body);
+}
+.shadow-primary{
+  box-shadow: var(--shadow-primary);
+}
+.logo{background-image: var(--logo);}
+
+/* ######################################################################################### */
+/* fonts */
+.font-family-Raleway {font-family: 'Raleway', sans-serif;}
+.font-family-Roboto {font-family: 'Roboto', sans-serif;}
+.font-family-Roboto-Slab {font-family: 'Roboto Slab', serif;}
+.font-family-Roboto-Serif {font-family: 'Roboto Serif', serif;}
+.font-family-Lora {font-family: 'Lora', serif;}
+.font-family-Didot {font-family: "GFS+Didot";}
+.font-family-Maven-Pro {font-family: 'Maven Pro', sans-serif;}
+.font-family-Fira-Sans {font-family: 'Fira Sans', sans-serif;}
+
+/* ######################################################################################### */
+
+/* media queries */
+/* Nano Small Screen (ns) */
+@media (max-width: 359px) {
+  /* Your CSS rules for small screens here */
+  .frame-container {
+    width: 90%;
+  }
+}
+
+/* Small small Screen (ss) */
+@media (min-width:360px) and (max-width: 640px) {
+  /* Your CSS rules for small screens here */
+  .frame-container {
+    width: 90%;
+  }
+}
+
+/* Small Screen (sm) */
+@media (min-width: 640px) and (max-width: 767px) {
+  /* Your CSS rules for small screens here */
+  .frame-container {
+    width: 94%;
+  }
+}
+
+/* Medium Screen (md) */
+@media (min-width: 768px) and (max-width: 1119px) {
+  /* Your CSS rules for medium screens here */
+  .frame-container {
+    width: 94%;
+  }
+}
+
+/* Large Screen (lg) */
+@media (min-width: 1120px) and (max-width: 1279px) {
+  /* Your CSS rules for large screens here */
+  .frame-container {
+    width: 90%;
+  }
+}
+
+/* Extra Large Screen (xl) */
+@media (min-width: 1280px) and (max-width: 1399px) {
+  /* Your CSS rules for extra large screens here */
+  .frame-container {
+    width: 88%;
+  }
+}
+
+/* 2 Extra Large Screen (2xl) */
+@media (min-width: 1400px) and (max-width: 1859px) {
+  /* Your CSS rules for 2 extra large screens here */
+  .frame-container {
+    width: 1344px;
+  }
+}
+
+/* 3 Extra Large Screen (3xl) */
+@media (min-width: 1860px) {
+  /* Your CSS rules for 3 extra large screens here */
+  .frame-container {
+    width: 1728px;
+  }
+}
+
+.set-bg {
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-position-y: center;
+}
+.set-bg-cover {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-position-y: center;
+}
+.set-bg-smart{
+  overflow: hidden;
+  position: relative;
+}
+.set-bg-smart-cover{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.set-bg-objContain{
+  object-fit: contain;
+}
+
+.set-bg-repeat {
+  background-size: cover;
+  background-repeat: repeat;
+  gap: 0;
+}
+
+.theme-icon{
+background-image: var(--theme-icon);
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
+  
+}
+
+.sidebar-height{
+  height: calc(100vh - 86.6px);
+}
+.sidebar-width{
+  width: calc(100% - 249px);
+}
+
+.nav-option-pane {
+  display: none;
+}
+.d-none{
+  display: none;
+}
+
+.Modal {
+  max-height: 90vh;
+  overflow-y: auto; 
+  
+}
